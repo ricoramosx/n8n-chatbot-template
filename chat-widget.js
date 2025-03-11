@@ -206,7 +206,7 @@
             background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
             color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 8px
             padding: 0 20px;
             cursor: pointer;
             transition: transform 0.2s;
@@ -292,9 +292,9 @@
         },
         branding: {
             logo: '',
-            name: '',
-            welcomeText: '',
-            responseTimeText: '',
+            name: 'Elev Automações',
+            welcomeText: 'Olá, como posso te ajudar hoje?',
+            responseTimeText: 'Normalmente respondemos em alguns minutos.',
             poweredBy: {
                 text: 'Criado por Elev Automações',
                 link: 'https://n8n.partnerlinks.io/m8a94i19zhqq?utm_source=nocodecreative.io'
@@ -310,7 +310,7 @@
     };
 
     // Merge user config with defaults
-    const config = window.ChatWidgetConfig ? 
+    const config = window.ChatWidgetConfig ?
         {
             webhook: { ...defaultConfig.webhook, ...window.ChatWidgetConfig.webhook },
             branding: { ...defaultConfig.branding, ...window.ChatWidgetConfig.branding },
@@ -348,7 +348,7 @@
                 <svg class="message-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.2L4 17.2V4h16v12z"/>
                 </svg>
-                Me envie uma mensagem
+                Iniciar conversa
             </button>
             <p class="response-text">${config.branding.responseTimeText}</p>
         </div>
@@ -363,7 +363,7 @@
             </div>
             <div class="chat-messages"></div>
             <div class="chat-input">
-                <textarea placeholder="Escreva sua mensagem aqui..." rows="1"></textarea>
+                <textarea placeholder="Digite sua mensagem..." rows="1"></textarea>
                 <button type="submit">Enviar</button>
             </div>
             <div class="chat-footer">
@@ -378,7 +378,7 @@
     toggleButton.className = `chat-toggle${config.style.position === 'left' ? ' position-left' : ''}`;
     toggleButton.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.5 21.5l4.5-.838A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.476 0-2.886-.313-4.156-.878l-3.156.586.586-3.156A7.962 7.962 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/>
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.5 21.5l4.5-.838A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.476 0-2.886-.313-4.156-.878l-3.156.586.586-3.156A7.962 7.962 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-8 8z"/>
         </svg>`;
     
     widgetContainer.appendChild(chatContainer);
