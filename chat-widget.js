@@ -299,7 +299,7 @@
             responseTimeText: 'Normalmente respondemos em poucos minutos.', // Traduzido
             poweredBy: {
                 text: 'Criado por Elev Automações', // Traduzido
-                link: 'https://n8n.partnerlinks.io/m8a94i19zhqq?utm_source=nocodecreative.io'
+                link: 'https://wa.me/554891801805'
             }
         },
         style: {
