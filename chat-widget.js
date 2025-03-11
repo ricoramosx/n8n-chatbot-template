@@ -1,5 +1,3 @@
-// chat-widget.js
-
 // Chat Widget Script
 (function() {
     // Create and inject styles
