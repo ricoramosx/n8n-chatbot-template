@@ -291,7 +291,7 @@
             route: ''
         },
         branding: {
-            logo: '',
+            logo: 'https://elevautomacoes.pro/wp-content/uploads/2025/03/Design-sem-nome-1.png',
             name: 'Elev Automações', // Confirmed
             welcomeText: 'Olá, como posso te ajudar hoje?', // Traduzido
             responseTimeText: 'Normalmente respondemos em poucos minutos.', // Traduzido
