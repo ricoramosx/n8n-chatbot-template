@@ -292,9 +292,9 @@
         },
         branding: {
             logo: 'https://elevautomacoes.pro/wp-content/uploads/2025/03/Design-sem-nome-1.png',
-            name: 'Elev Automações', // Confirmed
-            welcomeText: 'Olá, como posso te ajudar hoje?', // Traduzido
-            responseTimeText: 'Normalmente respondemos em poucos minutos.', // Traduzido
+            name: 'Elev Automações', // Your company name
+                welcomeText: 'Opa 👋, o que quer automatizar hoje?', //Welcome message
+                responseTimeText: 'Normalmente respondemos imediatamente.', //Response time message
             poweredBy: {
                 text: 'Criado por Elev Automações', // Traduzido
                 link: 'https://wa.me/554891801805'
